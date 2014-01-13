@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Place Annotations" description="Map testing widget for SeViAnno" author="Sharique Javaid, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="sharique@dbis.rwth-aachen.de">
+		<Require feature="dynamic-height"/>
+		<Require feature="opensocial-0.8"/>
+		<Require feature="views"/>
+	</ModulePrefs>
+	<Content type="html" view="home,profile">
+        <![CDATA[
+			<link type="text/css" rel="stylesheet" href="http://dbis.rwth-aachen.de/~kovachev/gadgets/sevianno2.1/css/sevianno-style.css"></style>
+            <script src="http://open-app.googlecode.com/files/openapp.js"></script>
+			<script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
+            <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js"></script> 
+			<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
+			<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js"></script> 
+            <script src="http://dbis.rwth-aachen.de/~nicolaescu/fw/widget/jQuery/jquery-1.5.1.min.js"></script>
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+            <script src="http://dl.dropbox.com/u/82585838/DUIClient.js"></script>
+            
+            <script type="text/javascript" src="http://dbis.rwth-aachen.de/~jahns/gadgets/sevianno/js/map_testing_v2.js"></script>
+            
+			<div class="fadeMe" style="display:none"><img id="ajaxLoader" class="ajaxLoader" src="images/ajax_loader.gif" style="display:none;"></img></div>
+			
+            <div id="login_box" class="hidden">
+            <span class="prompt">Name:</span>
+            <input type="text" value="" size="40" id="username"/>
+            
+            <span class="prompt">Lat</span>
+            <input type="text" value="" size="4" id="lat"/>
+            
+            <span class="prompt">Lng</span>
+            <input type="text" value="" size="4" id="lng"/>
+            
+            <button onClick="save()">Save</button>
+            <button onClick="cancel()">Cancel</button>
+            </div>
+            
+			<div id="container">
+				<div id="map_canvas" style="width:100%;height:100%"></div>
+			</div>
+ 
+		]]>
+    </Content>
+</Module>
