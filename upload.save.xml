@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Upload Video" description="Upload Video" author="G;khan Aksakalli, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="goekhan@dbis.rwth-aachen.de" height="300" width="300">
+		<Require feature="dynamic-height"/>
+	</ModulePrefs>
+<Content type="html">
+<![CDATA[
+
+	
+	<script src="http://open-app.googlecode.com/files/openapp.js"></script>
+	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
+	<script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js"></script> 
+	<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
+	<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js"></script> 
+	
+	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
+	<script type="text/javascript" src="js/swfupload.js"></script>
+	<script type="text/javascript" src="js/jquery.swfupload.js"></script>
+	<script type="text/javascript" src="js/upload.js"></script>
+
+<style type="text/css" >
+#swfupload-control p{ margin:10px 5px; font-size:0.9em; }
+#log{ margin:0; padding:0; width:350px;}
+#log li{ list-style-position:inside; margin:2px; border:1px solid #ccc; padding:10px; font-size:12px; 
+	font-family:Arial, Helvetica, sans-serif; color:#333; background:#fff; position:relative; display: block;}
+#log li .progressbar{ border:1px solid #333; height:5px ;background:#fff; }
+#log li .progress{ background:#999; width:0%; height:5px; }
+
+#log li p{ margin:0; line-height:18px; }
+#log li.success{ border:1px solid #339933; background:#ccf9b9; }
+#log li span.cancel{ position:absolute; top:5px; right:5px; width:20px; height:20px; 
+	background:url('https://raw.github.com/DadaMonad/sevianno/master/images/cancel.png') no-repeat; cursor:pointer; }
+</style>
+
+	<div id="swfupload-control" style="display: none">
+		<p>Upload mutliple videos</p> <input type="button" id="button" /> <p id="queuestatus" ></p> <ol id="log"></ol>
+	</div>
+	
+	<div id='output'>
+		
+	</div>
+		
+]]>
+</Content>
+</Module>
