@@ -17,7 +17,7 @@ function loaduploadView(){
     file_types : "*.mp4;*.avi;*.mpg;*.flv;*.wmv;*.3gp;*.mov;*.mts;*.swf",
     file_types_description : "Video files",
     file_upload_limit : 10,
-    flash_url : "swfupload.swf",
+    flash_url : "https://raw.github.com/DadaMonad/sevianno/master/js/swfupload.swf",
     button_image_url : 'https://raw.github.com/DadaMonad/sevianno/master/images/wdp_buttons_upload_114x29.png',
     button_width : 114,
     button_height : 29,
