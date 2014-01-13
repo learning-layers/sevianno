@@ -8,16 +8,16 @@
 
 	
 	<script src="http://open-app.googlecode.com/files/openapp.js"></script>
-	<script src="http://dbis.rwth-aachen.de/~nicolaescu/fw/widget/jQuery/jquery-1.5.1.min.js"></script>
+	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
 	<script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js"></script> 
 	<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
 	<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js"></script> 
 	
-	<script type="text/javascript" src="http://dl.dropbox.com/u/18619630/widgets/sevianno/upload/js/swfupload/swfupload.js"></script>
-	<script type="text/javascript" src="http://dl.dropbox.com/u/18619630/widgets/sevianno/upload/js/jquery.swfupload.js"></script>
-	<script src="http://dl.dropbox.com/u/82585838/DUIClient.js"></script>
+	<script type="text/javascript" src="js/swfupload.js"></script>
+	<script type="text/javascript" src="js/jquery.swfupload.js"></script>
+	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
 	
 <script type="text/javascript">
 
