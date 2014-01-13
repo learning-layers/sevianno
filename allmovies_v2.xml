@@ -29,7 +29,7 @@
 	<script src="http://dl.dropbox.com/u/82585838/DUIClient.js"></script>
 	<!--script type="text/javascript" src="http://dbis.rwth-aachen.de/~kovachev/gadgets/sevianno2.1/js/sevianno.js"></script-->
 	
-<script src="http://dbis.rwth-aachen.de/~jahns/gadgets/sevianno/js/allmovies.js" type="text/javascript"> </script>	
+<script src="js/allmovies.js" type="text/javascript"> </script>	
 	
 
 <!-- The code for Canvas view is here. -->
