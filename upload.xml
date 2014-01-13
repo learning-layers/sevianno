@@ -15,9 +15,9 @@
 	<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
 	<script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js"></script> 
 	
+	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
 	<script type="text/javascript" src="js/swfupload.js"></script>
 	<script type="text/javascript" src="js/jquery.swfupload.js"></script>
-	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
 	<script type="text/javascript" src="js/upload.js"></script>
 
 <style type="text/css" >
