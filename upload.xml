@@ -31,7 +31,7 @@
 #log li p{ margin:0; line-height:18px; }
 #log li.success{ border:1px solid #339933; background:#ccf9b9; }
 #log li span.cancel{ position:absolute; top:5px; right:5px; width:20px; height:20px; 
-	background:url('../images/cancel.png') no-repeat; cursor:pointer; }
+	background:url('https://raw.github.com/DadaMonad/sevianno/master/images/cancel') no-repeat; cursor:pointer; }
 </style>
 
 	<div id="swfupload-control" style="display: none">
