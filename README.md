@@ -13,7 +13,7 @@ a web application for semantic video annotation developed by the ACIS group, cha
 ## Older demo
 [![alt text](http://img.youtube.com/vi/fQuJayMdcp4/0.jpg)](http://www.youtube.com/watch?v=fQuJayMdcp4)
 
-# Related project
+# Related projects
 ## Sevianno-1
 [![alt text](http://img.youtube.com/vi/_VkmcWc82Us/0.jpg)](http://www.youtube.com/watch?v=_VkmcWc82Us)
 
