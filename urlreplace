@@ -1,0 +1,26 @@
+/* This defines all identifiers that can be used */
+ UrlIdentifier {
+    home, // hosting address of sevianno 
+    storagejs,
+    lasAjax
+}
+
+/* url-replacer replaces urls only on files with one of the following extensions */
+Extensions {
+    xml,
+    js,
+    css,
+    html
+}
+
+/* Hosted on the github account of DadaMonad */
+dmonad {
+    home -> https://raw.github.com/DadaMonad/sevianno/master/,
+    storagejs -> http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js,
+    lasAjax -> http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js
+}
+
+oldEnv {
+   storagejs -> http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js,
+   lasAjax -> http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js
+}
