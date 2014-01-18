@@ -20,7 +20,7 @@ dmonad {
     home -> https://raw.github.com/DadaMonad/sevianno/master/,
     storagejs -> http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js,
     lasAjax -> http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js,
-    jquery -> https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js
+    jquery -> https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js,
     duiclient -> https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js
 }
 
