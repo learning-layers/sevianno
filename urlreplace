@@ -2,7 +2,9 @@
  UrlIdentifier {
     home, // hosting address of sevianno 
     storagejs,
-    lasAjax
+    lasAjax,
+    jquery,
+    duiclient
 }
 
 /* url-replacer replaces urls only on files with one of the following extensions */
@@ -17,10 +19,19 @@ Extensions {
 dmonad {
     home -> https://raw.github.com/DadaMonad/sevianno/master/,
     storagejs -> http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js,
-    lasAjax -> http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js
+    lasAjax -> http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js,
+    jquery -> https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js
+    duiclient -> https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js
+}
+
+kovachev {
+    home -> http://dbis.rwth-aachen.de/~kovachev/gadgets/sevianno2.1/
 }
 
 oldEnv {
+   duiclient -> http://dl.dropbox.com/u/82585838/DUIClient.js,
+   jquery -> http://dbis.rwth-aachen.de/~nicolaescu/fw/widget/jQuery/jquery-1.5.1.min.js,
    storagejs -> http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js,
    lasAjax -> http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js
+
 }
