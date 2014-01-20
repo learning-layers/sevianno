@@ -73,7 +73,7 @@ function init() {
 
 	mygrid = new dhtmlXGridObject('gridbox');
 	mygrid
-			.setImagePath("https://raw.github.com/DadaMonad/sevianno/master/images/imgs/);
+			.setImagePath("https://raw.github.com/DadaMonad/sevianno/master/images/imgs/");
 	mygrid.setHeader("Type, Annotation, Start, End, Author,Remove,Update");
 	mygrid.setColAlign("left,left,left,left, left,center,center");
 	mygrid.setColTypes("ro,ro,ro,ro,ro,img,img");
