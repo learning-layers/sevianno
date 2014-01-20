@@ -29,10 +29,8 @@ http://open-app.googlecode.com/files/openapp.js"></script>
  <script src="http://dl.dropbox.com/u/33069302/fw/widget/annotationLibrary/dhtmlxGrid/codebase/excells/dhtmlxgrid_excell_link.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
- 
- <script src="js/annotationTable.js" >
- 
- </script>
+<script src="https://raw.github.com/DadaMonad/sevianno/master/js/annotationTable.js" > </script>
+
 <div class="fadeMe" style="display:none"><img id="ajaxLoader" class="ajaxLoader" src="images/ajax_loader.gif" style="display:none;"></img></div>
 <section>
 <div id="gridbox" style="height:100%; background-color:white;"></div>
