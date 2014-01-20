@@ -353,12 +353,12 @@ var iwcCallback = function(intent) {
 						mygrid
 								.cellById(id, 5)
 								.setValue(
-										"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
+										"https://raw.github.com/DadaMonad/sevianno/master/images/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
 						console.log("test");
 						mygrid
 								.cellById(id, 6)
 								.setValue(
-										"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
+										"https://raw.github.com/DadaMonad/sevianno/master/images/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
 					} else {
 						mygrid.cellById(id, 5).setValue("");
 						mygrid.cellById(id, 6).setValue("");
@@ -396,11 +396,11 @@ var iwcCallback = function(intent) {
 							mygrid
 									.cellById(id, 5)
 									.setValue(
-											"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
+											"https://raw.github.com/DadaMonad/sevianno/master/images/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
 							mygrid
 									.cellById(id, 6)
 									.setValue(
-											"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
+											"https://raw.github.com/DadaMonad/sevianno/master/images/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
 						} else {
 							mygrid.cellById(id, 5).setValue("");
 							mygrid.cellById(id, 6).setValue("");
@@ -832,11 +832,11 @@ function getAudioVisualSegmentsHandlerForMig(status, result) {
 										mygrid
 												.cellById(id, 5)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
 										mygrid
 												.cellById(id, 6)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
 
 									} else {
 										mygrid.cellById(id, 5).setValue("");
@@ -1140,11 +1140,11 @@ function getAudioVisualSegmentsHandlerForMig(status, result) {
 										mygrid
 												.cellById(id, 5)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
 										mygrid
 												.cellById(id, 6)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
 									} else {
 
 										mygrid.cellById(id, 5).setValue("");
@@ -1382,11 +1382,11 @@ function getAudioVisualSegmentsHandler(status, result) {
 										mygrid
 												.cellById(id, 5)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/DELETE.png^delete annotations^javascript:deleteAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,0).getValue(),mygrid.getRowsNum())^_self");
 										mygrid
 												.cellById(id, 6)
 												.setValue(
-														"https://raw.github.com/DadaMonad/sevianno/master/images/imgs/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
+														"https://raw.github.com/DadaMonad/sevianno/master/images/update.gif^update annotations^javascript:updateAnnotations(mygrid.getSelectedId(),mygrid.cellById(id,1).getValue(),mygrid.getRowsNum())^_self");
 
 									} else {
 
