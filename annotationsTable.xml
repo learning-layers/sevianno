@@ -30,7 +30,7 @@ http://open-app.googlecode.com/files/openapp.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
  
- <script type="text/javascript" src="js/annotationTable.js" >
+ <script src="js/annotationTable.js" >
  
  </script>
 <div class="fadeMe" style="display:none"><img id="ajaxLoader" class="ajaxLoader" src="images/ajax_loader.gif" style="display:none;"></img></div>
