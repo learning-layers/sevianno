@@ -14,13 +14,13 @@
 	<script src="http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js"></script> 
 	<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
 	<script src="http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js"></script> 
-	
-  <script type="text/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/swfupload/swfupload.js"></script>
-  <script type="text/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery.swfupload.js"></scripqt>
-
 	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
 
-  <script type="text/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/upload.js"></script>
+	
+  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/swfupload/swfupload.js"></script>
+  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery.swfupload.js"></script>
+
+  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/upload.js"></script>
 
 <style type="text/css" >
 #swfupload-control p{ margin:10px 5px; font-size:0.9em; }
