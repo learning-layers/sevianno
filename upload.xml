@@ -17,9 +17,13 @@
 	<script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
 
 	
+  <!-- Doesn't work; don't know why .. maybe libraries don't work together (I got the latest swfupload and an older jquery.swfupload and a decade old jquery-1.5.1)
   <script src="https://raw.github.com/DadaMonad/sevianno/master/js/swfupload/swfupload.js"></script>
-  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery.swfupload.js"></script>
+  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery.swfupload.js"></script> -->
+    <script type="text/javascript" src="http://dl.dropbox.com/u/18619630/widgets/sevianno/upload/js/swfupload/swfupload.js"></script>
+      <script type="text/javascript" src="http://dl.dropbox.com/u/18619630/widgets/sevianno/upload/js/jquery.swfupload.js"></script>
 
+ 
   <script src="https://raw.github.com/DadaMonad/sevianno/master/js/upload.js"></script>
 
 <style type="text/css" >
