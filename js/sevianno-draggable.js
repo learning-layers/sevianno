@@ -1,3 +1,5 @@
+   
+init_dragable = function(){
     $("#q").draggable({
         axis: "y",
         start: function(){
@@ -16,3 +18,5 @@
             $(this).css('top','');
         }
     });
+}
+gadgets.util.registerOnLoadHandler(init_dragable);
