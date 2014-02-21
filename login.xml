@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
 	<ModulePrefs title="Login" description="Login to Sevianno over LAS server" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de">
-		<!--Require feature="dynamic-height"/-->
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
 <Content type="html">
@@ -10,9 +9,9 @@
 	<script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
 	
 <link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/css/sevianno-style.css"></style>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery-1.10.2.js"></script>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery-ui-1.10.4.custom.js"></script>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/sevianno-draggable.js"></script>
+<script type="application/javascript" src="https://rawgithub.com/DadaMonad/sevianno/master/js/jquery-1.10.2.js"></script>
+<script type="application/javascript" src="https://rawgithub.com/DadaMonad/sevianno/master/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="application/javascript" src="https://rawgithub.com/DadaMonad/sevianno/master/js/sevianno-draggable.js"></script>
  <script src="http://dbis.rwth-aachen.de/~nicolaescu/fw/widget/jQuery/jquery-1.5.1.min.js"></script>
 	<script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
 	<script src="http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js"></script> 
