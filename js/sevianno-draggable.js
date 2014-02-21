@@ -1,5 +1,5 @@
    
-init_dragable = function(){
+var init_dragable = function(){
     $("#q").draggable({
         axis: "y",
         start: function(){
