@@ -1774,7 +1774,7 @@ function updateAudioVisualSegmentsConcept(status, result){
  
  </section>
  </div></div>
- <div id="q" style="height: 3px;" />
+ <div id="q" />
 ]]>
 </Content>
 </Module>
