@@ -2,7 +2,7 @@
 <Module>
 	<ModulePrefs title="Sevianno Player" description="Player widget for Sevianno videos" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de" >
 		<Require feature="dynamic-height"/>
-		<Require feature="views"/>
+		<!--Require feature="views"/-->
 		<Require feature="opensocial-0.9"/>
 	</ModulePrefs>
 <Content type="html">
@@ -53,7 +53,9 @@
 		<span id="onfinish"></span><span id="finjump1"></span><span id="finjump"></span><input id="setEndTimeButton" onclick="addEndTime();" type="button" value="set end time" disabled="true"><span id="debug"></span> 
 	</div -->
  
- <div id="q" style="height: 3px;" />
+]]>
+<![CDATA[
+  <div id="q" />
 ]]>
 </Content>
 </Module>
