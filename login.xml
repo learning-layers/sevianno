@@ -2,6 +2,7 @@
 <Module>
 	<ModulePrefs title="Login" description="Login to Sevianno over LAS server" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de">
 		<!--Require feature="dynamic-height"/-->
+		<Require feature="dynamic-height"/>
 	</ModulePrefs>
 <Content type="html">
 <![CDATA[
