@@ -1,5 +1,5 @@
 <Module>
-<ModulePrefs title="Annotate" description="Add annotation in Sevianno" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de" scrolling="true">
+<ModulePrefs title="Annotate" description="Add annotation in Sevianno" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de">
 <Require feature="dynamic-height"/>
 </ModulePrefs>
 <Content type="html">
