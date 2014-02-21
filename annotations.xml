@@ -4,7 +4,7 @@
 </ModulePrefs>
 <Content type="html">
 <![CDATA[
-<link type="text/css" rel="stylesheet" href="http://dbis.rwth-aachen.de/~kovachev/gadgets/sevianno2.1/css/sevianno-style.css"></style>
+<link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/css/sevianno-style.css"></style>
  
  <script src="http://open-app.googlecode.com/files/openapp.js"></script>
  <script src="http://www-i5.informatik.rwth-aachen.de/~srivatsan/final/scripts/effects.js"</script>
