@@ -4,6 +4,7 @@
 </ModulePrefs>
 <Content type="html">
 <![CDATA[
+<script src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery-ui-1.10.4.costom.js"></script>
 <link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/css/sevianno-style.css"></style>
  <script src="https://raw.github.com/DadaMonad/sevianno/master/js/sevianno-draggable.js"></script>
  <script src="http://open-app.googlecode.com/files/openapp.js"></script>
