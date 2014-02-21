@@ -1,10 +1,10 @@
 <Module>
-<ModulePrefs title="Annotate" description="Add annotation in Sevianno" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de" scrolling="true">
+<ModulePrefs title="Annotate" description="Add annotation in Sevianno" author="Petru Nicolaescu, Chair of Computer Science 5, RWTH Aachen University, Germany" author_email="nicolaescu@dbis.rwth-aachen.de">
 <Require feature="dynamic-height"/>
 </ModulePrefs>
 <Content type="html">
 <![CDATA[
-    <script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
+    <script src="https://rawgithub.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
 <link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/css/sevianno-style.css"></style>
 <script type="application/javascript" src="https://rawgithub.com/DadaMonad/sevianno/master/js/jquery-1.10.2.js"></script>
 <script type="application/javascript" src="https://rawgithub.com/DadaMonad/sevianno/master/js/jquery-ui-1.10.4.custom.js"></script>
