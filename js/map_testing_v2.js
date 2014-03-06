@@ -840,8 +840,9 @@ function getAudioVisualSegmentsHandler(status, result) {
 }
 
 function onLogin() {
-	document.getElementsByClassName("fadeMe")[0].setAttribute("style",
-			"display:none");
+    var o = document.getElementsByClassName("fadeMe")[0];
+    if(o !== undefined)
+        o.setAttribute("style", "display:none");
 };
 
 function onLogout() {
