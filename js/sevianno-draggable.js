@@ -1,6 +1,6 @@
    
 var init_dragable = function(){
-    if($("#q").draggable == undefined) 
+    if($("#q").draggable == null) 
             gadgets.util.registerOnLoadHandler(init_dragable);
     $("#q").draggable({
         axis: "y",
