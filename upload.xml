@@ -43,7 +43,7 @@
 #log li span.cancel{ position:absolute; top:5px; right:5px; width:20px; height:20px; 
 	background:url('https://raw.github.com/DadaMonad/sevianno/master/images/cancel.png') no-repeat; cursor:pointer; }
 </style>
-
+<div>
 	<div id="swfupload-control" style="display: none">
 		<p>Upload mutliple videos</p> <input type="button" id="button" /> <p id="queuestatus" ></p> <ol id="log"></ol>
 	</div>
@@ -52,7 +52,7 @@
 		
 	</div>
  <div id="q" style="height: 3px;" />
-		
+	</div>	
 ]]>
 </Content>
 </Module>
