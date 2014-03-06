@@ -15,6 +15,7 @@ var init_dragable = function(){
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
                 if($(".sevianno_autoresize") != "undefined"){
+                    console.log("did work....... ")
                     $(".sevianno_autoresize").height(height);
                 }
             },
