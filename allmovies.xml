@@ -35,6 +35,7 @@
 
 <!-- The code for Canvas view is here. -->
 <div>
+<div>
 	<div style="height:80%">
 <div class="fadeMe" style="display:none"></div>
 		<input type="text" name="searchField" id="searchField" > </input>
@@ -51,5 +52,6 @@
 	<!--div id="output"></div-->
 </div>
 <div id="q" style="height: 3px;"></div>
+</div>
   ]]></Content>
 </Module>
