@@ -1,7 +1,7 @@
    
 var init_dragable = function(){
     if($(".sevianno_autoresize") != "undefined"){
-        $(".sevianno_autoresize").height(height);
+        $(".sevianno_autoresize").height("100%");
     }
     if(typeof $("#q").draggable !== 'function') 
             gadgets.util.registerOnLoadHandler(init_dragable);
