@@ -36,7 +36,7 @@
 <!-- The code for Canvas view is here. -->
 <div>
 <div>
-	<div style="height:80%>
+	<div>
 <div class="fadeMe" style="display:none"></div>
 		<input type="text" name="searchField" id="searchField" > </input>
 		Choose Video  <span>(</span><span id="numberOfAvailableVideos"></span> <span> available)</span> 
