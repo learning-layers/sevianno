@@ -23,7 +23,7 @@
 ]]>
 <![CDATA[
 /gadgets/mobsosstatistics-dev/LASAjaxClient/lasAjaxClient.js"></script> 
- <script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script> 
+ <!-- Does not exist anymore .. script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script--> 
  <script src="http://role-is.dbis.rwth-aachen.de:9080/gadgets/mobsosstatistics-dev/JavascriptStorage/storage.js"></script> 
 ]]>
 <![CDATA[
