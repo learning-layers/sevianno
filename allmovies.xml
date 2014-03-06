@@ -37,7 +37,7 @@
 <div class="fadeMe" style="display:none"></div>
 
 <div>
-	<div>
+	<div style="height:100px">
 		<input type="text" name="searchField" id="searchField" > </input>
 		Choose Video  <span>(</span><span id="numberOfAvailableVideos"></span> <span> available)</span> 
 		<button type="button" onclick="getMpeg7MediaIds()"> Refresh </button>
