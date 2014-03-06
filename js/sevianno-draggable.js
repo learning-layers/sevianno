@@ -14,6 +14,9 @@ var init_dragable = function(){
                 var height = ui.position.top-50;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
+                if($("sevianno_autoresize")){
+                    $("sevianno_autoresize").height(height);
+                }
             },
             stop: function(){
                 $(this).css('height',3);

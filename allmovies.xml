@@ -37,7 +37,7 @@
 <div class="fadeMe" style="display:none"></div>
 
 <div>
-	<div style="height:100px">
+	<div style="height:100px" class="sevianno_autoresize">
 		<input type="text" name="searchField" id="searchField" > </input>
 		Choose Video  <span>(</span><span id="numberOfAvailableVideos"></span> <span> available)</span> 
 		<button type="button" onclick="getMpeg7MediaIds()"> Refresh </button>
