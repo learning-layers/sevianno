@@ -11,10 +11,10 @@ var init_dragable = function(){
             start: function(){
                 var $c = $("#canvas-frame");
                 $c.css('bottom', 'inherit');
-                $(this).css('height',5);
+                $(this).css('height',20);
             },
             drag: function( event, ui ) {
-                var height = ui.position.top-50;
+                var height = ui.position.top;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
                 if($(".sevianno_autoresize") != "undefined"){
