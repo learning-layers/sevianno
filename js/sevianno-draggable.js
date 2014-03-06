@@ -9,13 +9,15 @@ var init_dragable = function(){
                 var $c = $("#canvas-frame");
                 $c.css('bottom', 'inherit');
                 $(this).css('height',50);
+                                    console.log("did work....... 2");
+
             },
             drag: function( event, ui ) {
                 var height = ui.position.top-50;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
                 //if($(".sevianno_autoresize") != "undefined"){
-                    console.log("did work....... ")
+                    console.log("did work....... ");
                     $(".sevianno_autoresize").height(height);
                 //}
             },
@@ -23,6 +25,8 @@ var init_dragable = function(){
                 $(this).css('height',3);
                 gadgets.window.adjustHeight();
                 $(this).css('top','');
+                                    console.log("did work....... ");
+
             }
         });
     }
