@@ -8,7 +8,7 @@ var init_dragable = function(){
             start: function(){
                 var $c = $("#canvas-frame");
                 $c.css('bottom', 'inherit');
-                $(this).css('height',50);
+                $(this).css('height',5);
                                     console.log("did work....... 2");
 
             },
