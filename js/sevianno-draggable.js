@@ -14,10 +14,10 @@ var init_dragable = function(){
                 var height = ui.position.top-50;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
-                if($(".sevianno_autoresize") != "undefined"){
+                //if($(".sevianno_autoresize") != "undefined"){
                     console.log("did work....... ")
                     $(".sevianno_autoresize").height(height);
-                }
+                //}
             },
             stop: function(){
                 $(this).css('height',3);
