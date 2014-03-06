@@ -1,5 +1,8 @@
    
 var init_dragable = function(){
+    if($(".sevianno_autoresize") != "undefined"){
+        $(".sevianno_autoresize").height(height);
+    }
     if(typeof $("#q").draggable !== 'function') 
             gadgets.util.registerOnLoadHandler(init_dragable);
     else { 
@@ -9,26 +12,22 @@ var init_dragable = function(){
                 var $c = $("#canvas-frame");
                 $c.css('bottom', 'inherit');
                 $(this).css('height',5);
-                                    console.log("did work....... 2");
-
             },
             drag: function( event, ui ) {
                 var height = ui.position.top-50;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
-                //if($(".sevianno_autoresize") != "undefined"){
-                    console.log("did work....... ");
+                if($(".sevianno_autoresize") != "undefined"){
                     $(".sevianno_autoresize").height(height);
-                //}
+                }
             },
             stop: function(){
                 $(this).css('height',3);
                 gadgets.window.adjustHeight();
                 $(this).css('top','');
-                                    console.log("did work....... ");
-
             }
         });
     }
+    
 }
 gadgets.util.registerOnLoadHandler(init_dragable);
