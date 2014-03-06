@@ -11,7 +11,7 @@ var init_dragable = function(){
                 $(this).css('height',50);
             },
             drag: function( event, ui ) {
-                var height = ui.position.top;
+                var height = ui.position.top+30;
                 $("#canvas-frame").css('height', height);
                 gadgets.window.adjustHeight();
             },
