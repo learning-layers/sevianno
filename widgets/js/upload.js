@@ -18,7 +18,7 @@ function loaduploadView(){
     file_types_description : "Video files",
     file_upload_limit : 10,
     flash_url : "http://dl.dropbox.com/u/18619630/widgets/sevianno/upload/js/swfupload/swfupload.swf",
-    button_image_url : 'https://raw.github.com/DadaMonad/sevianno/master/widgets/images/wdp_buttons_upload_114x29.png',
+    button_image_url : 'http://54.229.235.99:1337/images/wdp_buttons_upload_114x29.png',
     button_width : 114,
     button_height : 29,
     button_placeholder : $('#button')[0],

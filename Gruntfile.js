@@ -102,6 +102,22 @@ module.exports = function(grunt) {
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
+      },
+      readme: {
+        src: ['README.md'],       // source files array (supports minimatch)
+        dest: 'README.md',             // destination directory or file
+        replacements: [{
+          from: 'http://54.229.235.99:1337/',
+          to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/'                   // string replacement
+        }]      
+      },
+      readmedev: {
+        src: ['README.md'],       // source files array (supports minimatch)
+        dest: 'README.md',             // destination directory or file
+        replacements: [{
+          from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }]      
       }
     }
   });
@@ -115,8 +131,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-githooks');
 
   // Default task.
-  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css']);
-  grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev']);
+  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css', 'replace:readme']);
+  grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev', 'replace:readmedev']);
   grunt.registerTask('servewidgets', ['connect']);
   grunt.registerTask('default', ['githooks']);
 
