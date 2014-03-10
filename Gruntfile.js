@@ -134,6 +134,7 @@ module.exports = function(grunt) {
   grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css', 'replace:readme']);
   grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev', 'replace:readmedev']);
   grunt.registerTask('servewidgets', ['connect']);
+  grunt.registerTask('githooks', ['githooks']);
   grunt.registerTask('default', ['githooks']);
 
 
