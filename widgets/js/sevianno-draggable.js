@@ -1,25 +1,31 @@
    
 var init_dragable = function(){
-    if($(".sevianno_autoresize") != "undefined"){
-        $(".sevianno_autoresize").height("100%");
-    }
-    if(typeof $("#q").draggable !== 'function') 
-            gadgets.util.registerOnLoadHandler(init_dragable);
-    else { 
+
+    if($("#q") == null || typeof $("#q").draggable !== 'function') {
+        gadgets.util.registerOnLoadHandler(init_dragable);
+		throw new Error("please include $.ui");
+    }else { 
+	    if($(".sevianno_autoresize") != "undefined"){
+			//$(".sevianno_autoresize").height("100%");
+		}
         $("#q").draggable({
            axis: "y",
             start: function(){
-                var $c = $("#canvas-frame");
+                var $a = $(".sevianno_autoresize");
+                $a.css('bottom', 'inherit');
+				
+				var $c = $("#canvas-frame");
                 $c.css('bottom', 'inherit');
                 $(this).css('height',20);
             },
             drag: function( event, ui ) {
-                var height = ui.position.top;
+                var height = ui.position.top-30;
                 $("#canvas-frame").css('height', height);
-                gadgets.window.adjustHeight();
                 if($(".sevianno_autoresize") != "undefined"){
-                    $(".sevianno_autoresize").height(height);
+                    $(".sevianno_autoresize").css('height', height);
                 }
+				gadgets.window.adjustHeight();
+
             },
             stop: function(){
                 $(this).css('height',3);
