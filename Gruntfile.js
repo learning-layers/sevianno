@@ -59,7 +59,7 @@ module.exports = function(grunt) {
         src: ['widgets/*.xml'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
-          from: 'http://54.229.235.99:1337/',
+          from: 'http://127.0.0.1:1337/',
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/'
         }]      
       },
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          from: 'http://54.229.235.99:1337/'
+          from: 'http://127.0.0.1:1337/'
         }]      
       },
       css: {
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          from: 'http://54.229.235.99:1337/'
+          from: 'http://127.0.0.1:1337/'
         }]      
       },
       maindev: {
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
         dest: 'widgets/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
+          to: 'http://127.0.0.1:1337/'
         }]      
       },
       jsdev: {
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
+          to: 'http://127.0.0.1:1337/'
         }]      
       },
       cssdev: {
@@ -100,14 +100,14 @@ module.exports = function(grunt) {
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
+          to: 'http://127.0.0.1:1337/'
         }]      
       },
       readme: {
         src: ['README.md'],       // source files array (supports minimatch)
         dest: 'README.md',             // destination directory or file
         replacements: [{
-          from: 'http://54.229.235.99:1337/',
+          from: 'http://127.0.0.1:1337/',
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/'                   // string replacement
         }]      
       },
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
         dest: 'README.md',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
+          to: 'http://127.0.0.1:1337/'
         }]      
       }
     }
