@@ -30,8 +30,8 @@ module.exports = function(grunt) {
     githooks: {
       all: {
         // Will run the jshint and test:unit tasks at every commit
-        'pre-commit': 'replaceUrlsProduction',
-        'post-commit': 'replaceUrlsDevelopment'
+        'pre-commit': 'replace:main replace:js replace:css',
+        'post-commit': 'replace:maindev replace:jsdev replace:cssdev'
       }
     },
     watch: {
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
     },
     replace: {
       main: {
-        src: ['widgets/*.+(js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/*.xml'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
           from: 'http://54.229.235.99:1337/',
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
         }]      
       },
       js: {
-        src: ['widgets/js/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/js/*.js'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
         }]      
       },
       css: {
-        src: ['widgets/css/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/css/*.css'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         }]      
       },
       maindev: {
-        src: ['widgets/*.+(js|xml|html|css|md)'],             // source files array (supports minimatch)
+        src: ['widgets/*.+(xml|md)'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
         }]      
       },
       jsdev: {
-        src: ['widgets/js/*.+(css|js|xml|html|md)'],             // source files array (supports minimatch)
+        src: ['widgets/js/*.js)'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
@@ -96,14 +96,14 @@ module.exports = function(grunt) {
         }]      
       },
       cssdev: {
-        src: ['widgets/css/*.+(css|js|xml|html|md)'],             // source files array (supports minimatch)
+        src: ['widgets/css/*.css'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
-      },
-      readme: {
+      }
+      /*readme: {
         src: ['README.md'],       // source files array (supports minimatch)
         dest: 'README.md',             // destination directory or file
         replacements: [{
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
           from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
-      }
+      }*/
     }
   });
 
@@ -131,8 +131,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-githooks');
 
   // Default task.
-  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css', 'replace:readme']);
-  grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev', 'replace:readmedev']);
+  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css']);
+  grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev']);
   grunt.registerTask('servewidgets', ['connect']);
   grunt.registerTask('githooks', ['githooks']);
   grunt.registerTask('default', ['githooks']);
