@@ -1,0 +1,142 @@
+/*global module:false*/
+module.exports = function(grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    // Task configuration.
+    jshint: {
+      options: {
+        curly: true,
+        eqeqeq: true,
+        immed: true,
+        latedef: true,
+        newcap: true,
+        noarg: true,
+        sub: true,
+        undef: true,
+        unused: true,
+        boss: true,
+        eqnull: true,
+        browser: true,
+        globals: {}
+      },
+      gruntfile: {
+        src: 'Gruntfile.js'
+      },
+      lib_test: {
+        src: ['widgets/**/*.js', 'test/**/*.js']
+      }
+    },
+    githooks: {
+      all: {
+        // Will run the jshint and test:unit tasks at every commit
+        'pre-commit': 'replaceUrlsProduction',
+        'post-commit': 'replaceUrlsDevelopment'
+      }
+    },
+    watch: {
+      gruntfile: {
+        files: '<%= jshint.gruntfile.src %>',
+        tasks: ['jshint:gruntfile']
+      },
+      lib_test: {
+        files: '<%= jshint.lib_test.src %>',
+        tasks: ['jshint:lib_test', 'qunit']
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          hostname: '*',
+          port: 1337,
+          base: 'widgets_online',
+          keepalive: true
+        }
+      }
+    },
+    replace: {
+      main: {
+        src: ['widgets/*.+(js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/',             // destination directory or file
+        replacements: [{
+          from: 'http://54.229.235.99:1337/',
+          to: 'https://raw.github.com/DadaMonad/'
+        }, {
+          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          from: 'http://54.229.235.99:1337/'
+        }]      
+      },
+      js: {
+        src: ['widgets/js/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/js/',             // destination directory or file
+        replacements: [{
+          to: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          from: 'http://54.229.235.99:1337/'
+        }, {
+          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          from: 'http://54.229.235.99:1337/'
+        }]      
+      },
+      css: {
+        src: ['widgets/css/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/css/',             // destination directory or file
+        replacements: [{
+          to: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          from: 'http://54.229.235.99:1337/'
+        }, {
+          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+         from: 'http://54.229.235.99:1337/'
+        }]      
+      },
+      maindev: {
+        src: ['widgets/*.+(js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/',             // destination directory or file
+        replacements: [{
+          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }, {
+          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }]      
+      },
+      jsdev: {
+        src: ['widgets/js/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/js/',             // destination directory or file
+        replacements: [{
+          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }, {
+          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }]      
+      },
+      cssdev: {
+        src: ['widgets/css/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        dest: 'widgets/css/',             // destination directory or file
+        replacements: [{
+          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }, {
+          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          to: 'http://54.229.235.99:1337/'
+        }]      
+      }
+    }
+  });
+
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-githooks');
+
+  // Default task.
+  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css']);
+  grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev']);
+  grunt.registerTask('servewidgets', ['connect']);
+  grunt.registerTask('default', ['githooks']);
+
+
+};
