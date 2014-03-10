@@ -5,10 +5,10 @@
 <Content type="html">
 <![CDATA[
     <script src="https://rawgithub.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
-<link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/css/sevianno-style.css"></style>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery-1.10.2.js"></script>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/jquery-ui-1.10.4.custom.js"></script>
-<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/js/sevianno-draggable.js"></script>
+<link type="text/css" rel="stylesheet" href="http://54.229.235.99:1337/css/sevianno-style.css"></style>
+<script type="application/javascript" src="http://54.229.235.99:1337/js/jquery-1.10.2.js"></script>
+<script type="application/javascript" src="http://54.229.235.99:1337/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="application/javascript" src="http://54.229.235.99:1337/js/sevianno-draggable.js"></script>
  
  <script src="http://open-app.googlecode.com/files/openapp.js"></script>
  <script src="http://www-i5.informatik.rwth-aachen.de/~srivatsan/final/scripts/effects.js"</script>

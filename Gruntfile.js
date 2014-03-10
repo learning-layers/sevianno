@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         options: {
           hostname: '*',
           port: 1337,
-          base: 'widgets_online',
+          base: 'widgets',
           keepalive: true
         }
       }
@@ -60,14 +60,14 @@ module.exports = function(grunt) {
         dest: 'widgets/',             // destination directory or file
         replacements: [{
           from: 'http://54.229.235.99:1337/',
-          to: 'https://raw.github.com/DadaMonad/'
+          to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/'
         }]      
       },
       js: {
         src: ['widgets/js/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
-          to: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           from: 'http://54.229.235.99:1337/'
         }]      
       },
@@ -75,40 +75,31 @@ module.exports = function(grunt) {
         src: ['widgets/css/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
-          to: 'https://raw.github.com/DadaMonad/',                   // string replacement
+          to: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           from: 'http://54.229.235.99:1337/'
         }]      
       },
       maindev: {
-        src: ['widgets/*.+(js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/*.+(js|xml|html|css|md)'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
-          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
-        }, {
-          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
       },
       jsdev: {
-        src: ['widgets/js/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/js/*.+(css|js|xml|html|md)'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
-          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
-        }, {
-          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
       },
       cssdev: {
-        src: ['widgets/css/*.+(css|js|xml|html)'],             // source files array (supports minimatch)
+        src: ['widgets/css/*.+(css|js|xml|html|md)'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
-          from: 'https://raw.github.com/DadaMonad/',                   // string replacement
-          to: 'http://54.229.235.99:1337/'
-        }, {
-          from: 'https://rawgithub.com/DadaMonad/',                   // string replacement
+          from: 'https://raw.github.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
           to: 'http://54.229.235.99:1337/'
         }]      
       }
