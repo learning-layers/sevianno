@@ -61,9 +61,6 @@ module.exports = function(grunt) {
         replacements: [{
           from: 'http://54.229.235.99:1337/',
           to: 'https://raw.github.com/DadaMonad/'
-        }, {
-          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
-          from: 'http://54.229.235.99:1337/'
         }]      
       },
       js: {
@@ -71,9 +68,6 @@ module.exports = function(grunt) {
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/',                   // string replacement
-          from: 'http://54.229.235.99:1337/'
-        }, {
-          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
           from: 'http://54.229.235.99:1337/'
         }]      
       },
@@ -83,9 +77,6 @@ module.exports = function(grunt) {
         replacements: [{
           to: 'https://raw.github.com/DadaMonad/',                   // string replacement
           from: 'http://54.229.235.99:1337/'
-        }, {
-          to: 'https://rawgithub.com/DadaMonad/',                   // string replacement
-         from: 'http://54.229.235.99:1337/'
         }]      
       },
       maindev: {
