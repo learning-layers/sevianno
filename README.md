@@ -4,13 +4,13 @@ a web application for semantic video annotation developed by the ACIS group, cha
 [Link to role space](http://role-sandbox.eu/spaces/sevianno2)
 
 ## Role widgets
-* [Upload widget](http://127.0.0.1:1337/upload.xml)
-* [List all movies widget](http://127.0.0.1:1337/allmovies.xml)
-* [Player widget](http://127.0.0.1:1337/jwplayer.xml)
-* [Login widget](http://127.0.0.1:1337/login.xml)
-* [Google map widget](http://127.0.0.1:1337/map.xml)
-* [Annotations table](http://127.0.0.1:1337/annotationsTable.xml)
-* [Annotation editor](http://127.0.0.1:1337/annotations.xml)
+* [Upload widget](https://raw.github.com/DadaMonad/sevianno/master/widgets/upload.xml)
+* [List all movies widget](https://raw.github.com/DadaMonad/sevianno/master/widgets/allmovies.xml)
+* [Player widget](https://raw.github.com/DadaMonad/sevianno/master/widgets/jwplayer.xml)
+* [Login widget](https://raw.github.com/DadaMonad/sevianno/master/widgets/login.xml)
+* [Google map widget](https://raw.github.com/DadaMonad/sevianno/master/widgets/map.xml)
+* [Annotations table](https://raw.github.com/DadaMonad/sevianno/master/widgets/annotationsTable.xml)
+* [Annotation editor](https://raw.github.com/DadaMonad/sevianno/master/widgets/annotations.xml)
 
 ## Older demo
 [![alt text](http://img.youtube.com/vi/fQuJayMdcp4/0.jpg)](http://www.youtube.com/watch?v=fQuJayMdcp4)

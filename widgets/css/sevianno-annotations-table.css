@@ -677,20 +677,20 @@ div.gridbox_sbdark .odd_sbdark {
  }
 div.gridbox_dhx_skyblue div.ftr td{
 	text-align:right;
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_grid.gif);
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_grid.gif);
 	border-color:#A4BED4;
 }
 
 div.gridbox_dhx_skyblue .xhdr{
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_grid.gif);	
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_grid.gif);	
 }
 
 div.gridbox_dhx_skyblue table.hdr tr{
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_grid.gif);
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_grid.gif);
 	background-position:0px -1px\9;
 }
 body:nth-of-type(1) div.gridbox_dhx_skyblue table.hdr tr{
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_grid.gif);
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_grid.gif);
 	background-position:0px -1px;
 }
 
@@ -751,12 +751,12 @@ div.gridbox_dhx_skyblue table.obj tr.rowselected td{
 	background-color:#FFF1CC;
 	background-repeat:repeat-x;
 	background-position:0px 0px;	
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_sel2.png);
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_sel2.png);
 }
 div.gridbox_dhx_skyblue table.obj.row20px tr.rowselected td{
 	background-repeat:repeat-x;
 	background-position:0px 0px;	
-	background-image:url(http://127.0.0.1:1337/images/imgs/sky_blue_sel.png);	
+	background-image:url(https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/sky_blue_sel.png);	
 }
 
 div.gridbox_dhx_skyblue table.obj tr.rowselected td.cellselected {
@@ -790,7 +790,7 @@ div.gridbox_dhx_skyblue table.obj tr td.rowselector div.rowselector2 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-image: url("http://127.0.0.1:1337/images/imgs/dhxgrid_dhx_skyblue/rowselector.png");
+	background-image: url("https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/dhxgrid_dhx_skyblue/rowselector.png");
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -802,7 +802,7 @@ div.gridbox_dhx_skyblue table.obj tr td.rowselector div.rowselector2 div.rowsele
 	width: 100%;
 	height: 1px;
 	line-height: normal;
-	background-image: url("http://127.0.0.1:1337/images/imgs/dhxgrid_dhx_skyblue/rowselector.png");
+	background-image: url("https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/dhxgrid_dhx_skyblue/rowselector.png");
 	background-position: left top;
 	background-repeat: no-repeat;
 	overflow: hidden;
@@ -820,10 +820,10 @@ div.gridbox_dhx_skyblue table.obj tr td.rowselector div.rowselector2 div.rowsele
 	overflow: hidden;
 }
 div.gridbox_dhx_skyblue table.obj tr.rowselected td.rowselector div.rowselector2 div.rowselector4 {
-	background-image: url("http://127.0.0.1:1337/images/imgs/dhxgrid_dhx_skyblue/arrow.png");
+	background-image: url("https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/dhxgrid_dhx_skyblue/arrow.png");
 }
 div.gridbox_dhx_skyblue table.obj tr.rowselected td.rowselector.editmode div.rowselector2 div.rowselector4 {
-	background-image: url("http://127.0.0.1:1337/images/imgs/dhxgrid_dhx_skyblue/asteriks.png");
+	background-image: url("https://raw.github.com/DadaMonad/sevianno/master/widgets/images/imgs/dhxgrid_dhx_skyblue/asteriks.png");
 }
 
 tr.ev_dhx_skyblue:hover
