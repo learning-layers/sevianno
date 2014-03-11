@@ -10,12 +10,12 @@
  </UserPref>
 <Content type="html">
 <![CDATA[
-<link type="text/css" rel="stylesheet" href="http://127.0.0.1:1337/css/sevianno-annotations-table.css" />
-<link type="text/css" rel="stylesheet" href="http://127.0.0.1:1337/css/sevianno-style.css"></style>
+<link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/widgets/css/sevianno-annotations-table.css" />
+<link type="text/css" rel="stylesheet" href="https://raw.github.com/DadaMonad/sevianno/master/widgets/css/sevianno-style.css"></style>
     <script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/jquery/jquery-1.5.1.min.js"></script>
-<script type="application/javascript" src="http://127.0.0.1:1337/js/jquery-1.10.2.js"></script>
-<script type="application/javascript" src="http://127.0.0.1:1337/js/jquery-ui-1.10.4.custom.js"></script>
-<script type="application/javascript" src="http://127.0.0.1:1337/js/sevianno-draggable.js"></script>
+<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/widgets/js/jquery-1.10.2.js"></script>
+<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/widgets/js/jquery-ui-1.10.4.custom.js"></script>
+<script type="application/javascript" src="https://raw.github.com/DadaMonad/sevianno/master/widgets/js/sevianno-draggable.js"></script>
  <script src="http://open-app.googlecode.com/files/openapp.js"></script>
 <script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
@@ -28,7 +28,7 @@
  <script src="http://dl.dropbox.com/u/33069302/fw/widget/annotationLibrary/dhtmlxGrid/codebase/excells/dhtmlxgrid_excell_link.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script src="https://raw.github.com/nicolaescu/widgetbundles/master/libraries/DUIClient.js"></script>
-<script src="http://127.0.0.1:1337/js/annotationTable.js"></script>
+<script src="https://raw.github.com/DadaMonad/sevianno/master/widgets/js/annotationTable.js"></script>
 
 <div class="fadeMe" style="display:none"><img id="ajaxLoader" class="ajaxLoader" src="images/ajax_loader.gif" style="display:none;"></img></div>
 <section>
