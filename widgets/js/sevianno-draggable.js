@@ -2,8 +2,8 @@
 var init_dragable = function(){
 
     if($("#q") == null || typeof $("#q").draggable !== 'function') {
-        gadgets.util.registerOnLoadHandler(init_dragable);
-		throw new Error("please include $.ui");
+        //gadgets.util.registerOnLoadHandler(init_dragable);
+	//throw new Error("please include $.ui");
     }else { 
 	    if($(".sevianno_autoresize") != "undefined"){
 			//$(".sevianno_autoresize").height("100%");
