@@ -4,6 +4,25 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Task configuration.
+	defaults: {
+		replacementUrls: {
+			development: "http://127.0.0.1:1337/",
+			git: "https://rawgithub.com/DadaMonad/sevianno/master/widgets/",
+			ftp: "http://dbis.rwth-aachen.de/~jahns/role-widgets/sevianno/"
+		}
+	},
+	'ftp-deploy': {
+		build: {
+			auth: {
+				host: 'manet.informatik.rwth-aachen.de',
+				port: 21,
+				//authKey: 'key1'
+			},
+			src: './widgets',
+			dest: '/home/jahns/public_html/role-widgets/sevianno',
+			exclusions: []
+		}
+	},
     jshint: {
       options: {
         curly: true,
@@ -55,69 +74,113 @@ module.exports = function(grunt) {
       }
     },
     replace: {
-      main: {
+      mainGit: {
         src: ['widgets/*.xml'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
-          from: 'http://127.0.0.1:1337/',
-          to: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/'
+          from: "<%= defaults.replacementUrls.development %>",
+          to: "<%= defaults.replacementUrls.git %>"
         }]      
       },
-      js: {
+      jsGit: {
         src: ['widgets/js/*.js'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
-          to: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          from: 'http://127.0.0.1:1337/'
+          to: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          from: "<%= defaults.replacementUrls.development %>"
         }]      
       },
-      css: {
+      cssGit: {
         src: ['widgets/css/*.css'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
-          to: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          from: 'http://127.0.0.1:1337/'
+          to: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          from: "<%= defaults.replacementUrls.development %>"
+        }]      
+      },
+	  readmeGit: {
+        src: ['README.md'],       // source files array (supports minimatch)
+        dest: 'README.md',             // destination directory or file
+        replacements: [{
+          from: "<%= defaults.replacementUrls.development %>",
+          to: "<%= defaults.replacementUrls.git %>"                   // string replacement
+        }]      
+      },
+	  mainFtp: {
+        src: ['widgets/*.xml'],             // source files array (supports minimatch)
+        dest: 'widgets/',             // destination directory or file
+        replacements: [{
+          from: "<%= defaults.replacementUrls.development %>",
+          to: "<%= defaults.replacementUrls.ftp %>"
+        }]      
+      },
+      jsFtp: {
+        src: ['widgets/js/*.js'],             // source files array (supports minimatch)
+        dest: 'widgets/js/',             // destination directory or file
+        replacements: [{
+          to: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          from: "<%= defaults.replacementUrls.development %>"
+        }]      
+      },
+      cssFtp: {
+        src: ['widgets/css/*.css'],             // source files array (supports minimatch)
+        dest: 'widgets/css/',             // destination directory or file
+        replacements: [{
+          to: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          from: "<%= defaults.replacementUrls.development %>"
+        }]      
+      },
+	  readmeFtp: {
+        src: ['README.md'],       // source files array (supports minimatch)
+        dest: 'README.md',             // destination directory or file
+        replacements: [{
+          from: "<%= defaults.replacementUrls.development %>",
+          to: "<%= defaults.replacementUrls.ftp %>"                   // string replacement
         }]      
       },
       maindev: {
         src: ['widgets/*.+(xml|md)'],             // source files array (supports minimatch)
         dest: 'widgets/',             // destination directory or file
         replacements: [{
-          from: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://127.0.0.1:1337/'
-        }]      
+          from: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>"
+        },{
+		  from: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>" 
+		}]      
       },
       jsdev: {
         src: ['widgets/js/*.js)'],             // source files array (supports minimatch)
         dest: 'widgets/js/',             // destination directory or file
         replacements: [{
-          from: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://127.0.0.1:1337/'
-        }]      
+          from: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>"
+        },{
+		  from: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>" 
+		}]      
       },
       cssdev: {
         src: ['widgets/css/*.css'],             // source files array (supports minimatch)
         dest: 'widgets/css/',             // destination directory or file
         replacements: [{
-          from: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://127.0.0.1:1337/'
-        }]      
-      },
-      readme: {
-        src: ['README.md'],       // source files array (supports minimatch)
-        dest: 'README.md',             // destination directory or file
-        replacements: [{
-          from: 'http://127.0.0.1:1337/',
-          to: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/'                   // string replacement
-        }]      
+          from: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>"
+        },{
+		  from: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>" 
+		}]      
       },
       readmedev: {
         src: ['README.md'],       // source files array (supports minimatch)
         dest: 'README.md',             // destination directory or file
         replacements: [{
-          from: 'https://rawgithub.com/DadaMonad/sevianno/master/widgets/',                   // string replacement
-          to: 'http://127.0.0.1:1337/'
-        }]      
+          from: "<%= defaults.replacementUrls.git %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>"
+        },{
+		  from: "<%= defaults.replacementUrls.ftp %>",                   // string replacement
+          to: "<%= defaults.replacementUrls.development %>" 
+		}]      
       }
     }
   });
@@ -129,13 +192,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-githooks');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
+
 
   // Default task.
-  grunt.registerTask('replaceUrlsProduction', ['replace:main', 'replace:js', 'replace:css', 'replace:readme']);
+  grunt.registerTask('replaceUrlsProduction', ['replace:mainGit', 'replace:jsGit', 'replace:cssGit', 'replace:readmeGit']);
+  grunt.registerTask('replaceUrlsFtp', ['replace:mainFtp', 'replace:jsFtp', 'replace:cssFtp', 'replace:readmeFtp']);
   grunt.registerTask('replaceUrlsDevelopment', ['replace:maindev', 'replace:jsdev', 'replace:cssdev', 'replace:readmedev']);
   grunt.registerTask('servewidgets', ['connect']);
   grunt.registerTask('save-githooks', ['githooks']);
-  grunt.registerTask('default', ['githooks']);
+  grunt.registerTask('deploy', ['replaceUrlsFtp', 'ftp-deploy', 'replaceUrlsDevelopment'])
 
 
 };

@@ -19,7 +19,7 @@ var init_dragable = function(){
                 $(this).css('height',20);
             },
             drag: function( event, ui ) {
-                var height = ui.position.top;
+                var height = ui.position.top-15;
                 $("#canvas-frame").css('height', height);
                 if($(".sevianno_autoresize") != "undefined"){
                     $(".sevianno_autoresize").css('height', height);
@@ -28,7 +28,7 @@ var init_dragable = function(){
 
             },
             stop: function(){
-                $(this).css('height',3);
+                $(this).css('height',5);
                 gadgets.window.adjustHeight();
                 $(this).css('top','');
             }
