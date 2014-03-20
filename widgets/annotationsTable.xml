@@ -17,10 +17,10 @@
 <script type="application/javascript" src="http://127.0.0.1:1337/js/jquery-ui-1.10.4.custom.js"></script>
 <script type="application/javascript" src="http://127.0.0.1:1337/js/sevianno-draggable.js"></script>
  <script src="http://open-app.googlecode.com/files/openapp.js"></script>
-<script src="https://role-project.svn.sourceforge.net/svnroot/role-project/trunk/libraries/iwc/src/main/javascript/iwc.js"></script>
+<script src="http://dbis.rwth-aachen.de/gadgets/iwc/lib/iwc.js"></script>
 <script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script src="http://dbis.rwth-aachen.de/gadgets/lib/las/lasAjaxClient.js"></script>
- <script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script>
+ <!--script src="http://role-is.dbis.rwth-aachen.de/lib/container/json2.js" ></script-->
  <script src="http://dbis.rwth-aachen.de/gadgets/lib/las/storage.js"></script>
  <script src="http://dl.dropbox.com/u/33069302/fw/widget/annotationLibrary/dhtmlxGrid/codebase/dhtmlxcommon.js"></script>
 <script src="http://dl.dropbox.com/u/33069302/fw/widget/annotationLibrary/dhtmlxGrid/codebase/dhtmlxgrid.js"></script>
